@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-color: white;
+  --font-style: 'Lato', sans-serif;
+  --background-color: #1e1c1c;
+  --font-color: #e5e5e5;
+}
+
+main {
+  background: var(--background-color);
+}
+
+.top-section {
+  background-image: url('../assets/Mobile.png');
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+
+.bottom-section {
+  background: var(--background-color);
+  height: 50vh;
+}
+
+h2 {
+  letter-spacing: 0.15rem;
+  font-family: var(--font-style);
+  color: var(--font-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.1rem !important;
+}
+
+h3 {
+  font-weight: 600 !important;
+  font-family: var(--font-style);
+  color: var(--font-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h6 {
+  font-family: var(--font-style);
+  color: var(--font-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem !important;
+  letter-spacing: 0.15rem;
+}
+
+ul,
+li {
+  color: var(--font-color);
+  list-style: none;
+  margin-bottom: 0.2rem;
+}
+
+li {
+  font-size: 0.8rem;
+  margin-left: 2rem;
+}
+
+#menu {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  fill: var(--font-color);
+}
+
+#logo {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.big-weather {
+  font-size: 3.5rem !important;
+  margin-top: 0.5rem;
+}
+
+.calendar {
+  display: none;
+}
+
+.title {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img {
+  margin-top: 2rem;
+  width: 12rem;
+}
+
+.weather-image {
+  margin: 1rem 0;
+  max-width: 70%;
+}
+
+.weather-column {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.temperature {
+  font-size: 1.75rem;
+  font-family: var(--font-style);
+  color: var(--font-color);
+  margin-bottom: 0;
+}
+
+.week-day {
+  font-size: 0.9rem;
+  font-family: var(--font-style);
+  color: var(--font-color);
+  margin-bottom: 0;
+}
+
+.task-list {
+  display: none;
+}
+
+#myCalendar {
+  margin-top: 15rem;
+}
+
+@media (min-width: 767px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .top-section {
+    display: flex;
+    background-image: url('../assets/Mobile.png');
+    background-position: top;
+    background-size: cover;
+    height: 42vh;
+    width: 100vw;
+  }
+
+  .bottom-section {
+    padding: 2rem;
+    justify-content: space-between;
+    display: flex;
+    width: 100vw;
+    height: 58vh;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container img {
+    margin-top: 2rem;
+    width: 8rem;
+  }
+
+  .big-weather {
+    font-size: 2.5rem !important;
+    margin-top: 0.5rem;
+  }
+
+  h3 {
+    order: 3;
+  }
+
+  .calendar {
+    margin-left: 15rem;
+    width: 300px;
+  }
+
+  #logo {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+    width: 100px;
+  }
+
+  .task-list {
+    display: flex;
+    margin-top: 5rem;
+  }
+
+  .title {
+    margin-top: 10rem;
+  }
+  #myCalendar {
+    margin-top: 0;
+    margin-left: 27rem;
+  }
+}
+@media (min-width: 1079px) {
+  #myCalendar {
+    margin-top: 0;
+    margin-left: 55rem;
+  }
+}
