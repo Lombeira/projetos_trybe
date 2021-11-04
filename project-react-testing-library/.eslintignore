@@ -1,0 +1,5 @@
+src/*.js
+src/*.css
+src/services/*
+coverage/*
+reports
