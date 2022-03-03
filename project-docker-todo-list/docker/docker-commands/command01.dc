@@ -1,0 +1,21 @@
+docker container create -it --name 01container alpine:3.12
+
+docker container start 01container
+
+docker ps -a --no-trunc --filter name=^/01container$
+
+docker exec 01container cat /etc/os-release
+
+docker rm --force 01container
+
+docker pull nginx:1.21.3-alpine
+
+docker container run --name 02images -dit -p 3000:80 nginx:1.21.3-alpine
+
+docker container stop 02images
+
+docker image build -t todobackend ./todo-app/back-end
+
+docker image build -t todofrontend ./todo-app/front-end
+
+docker image build -t todotests ./todo-app/tests
