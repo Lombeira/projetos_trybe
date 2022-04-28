@@ -1,0 +1,69 @@
+{
+    "requirements": [
+        {
+            "description": "01 - Classe Race",
+            "bonus": false,
+            "skill_ids": []
+        },
+        {
+            "description": "02 - Classes que herdam de Race",
+            "bonus": false,
+            "skill_ids": []
+        },
+        {
+            "description": "03 - Energy",
+            "bonus": false,
+            "skill_ids": []
+        },
+        {
+            "description": "04 - Classe Archetype",
+            "bonus": false,
+            "skill_ids": []
+        },
+        {
+            "description": "05 - Classes que herdam de Archetype",
+            "bonus": false,
+            "skill_ids": []
+        },
+        {
+            "description": "06 - Interface Fighter",
+            "bonus": false,
+            "skill_ids": []
+        },
+        {
+            "description": "07 - Classe Character",
+            "bonus": false,
+            "skill_ids": []
+        },
+        {
+            "description": "08 - Interface SimpleFighter",
+            "bonus": false,
+            "skill_ids": []
+        },
+        {
+            "description": "09 - Classe Monster",
+            "bonus": false,
+            "skill_ids": []
+        },
+        {
+            "description": "10 - Classe PVP",
+            "bonus": false,
+            "skill_ids": []
+        },
+        {
+            "description": "11 - Classe PVE",
+            "bonus": true,
+            "skill_ids": []
+        },
+        {
+            "description": "12 - Classe Dragon",
+            "bonus": true,
+            "skill_ids": []
+        },
+        {
+            "description": "13 - Arquivo index",
+            "bonus": true,
+            "skill_ids": []
+        }
+    ]
+}
